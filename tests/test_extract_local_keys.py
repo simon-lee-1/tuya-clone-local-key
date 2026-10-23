@@ -65,8 +65,15 @@ if all(p.exists() for p in (TOOL, FIXTURE, EXPECTED)):
         symlinked = run("--input", FIXTURE, "--include-keys", "--output", link)
         ck("P8 symlink output is refused without changing target",
            symlinked.returncode != 0 and target.read_text() == "sentinel")
+
+        # Fixed demonstration literals prevent a fixture update from silently substituting
+        # captured keys. Check both the expectation and the actual parsed capture.
+        demo_keys = {"FAKE!KEY?ONE#001", "FAKE$KEY_TWO%002"}
+        ck("P9 fixtures contain only the fixed demonstration keys",
+           set(synthetic_keys) == demo_keys
+           and {row.get("local_key") for row in values} == demo_keys)
 else:
-    for label in range(2, 9):
+    for label in range(2, 10):
         ck(f"P{label} unavailable", False, "implementation absent")
 
 passed = sum(ok for ok, _, _ in checks)

@@ -18,6 +18,14 @@ It does not depend on enrolling the device in a Tuya IoT developer project.
 
 This is a historical result for the extraction method. The included scanner and parser have offline synthetic tests; this publication is not a new live test against the latest versions of those apps. Compatibility with other apps, operating systems or future releases is not guaranteed.
 
+## Root detection
+
+Successful extraction on a rooted phone **does not prove that an app has no root detection**.
+
+The historical notes record attempts to hide root. **One tested app still detected root** and could exit; the notes report that its loaded device data could be captured before it exited. The app's identity remains private.
+
+This establishes that extraction was possible in the recorded circumstances. It does not establish that root detection was absent or permanently bypassed, or that the same app will accept an emulator.
+
 ## Why reading memory can work
 
 An app may encrypt its network payloads and disk storage while keeping decrypted device records in memory for normal operation. The recorded successful extractions found JSON data containing `localKey` after the app had decrypted it.

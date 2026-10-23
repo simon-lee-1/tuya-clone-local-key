@@ -32,7 +32,7 @@ cd tuya-clone-local-key
 python3 tools/extract_local_keys.py --input fixtures/synthetic_memory.fixture
 ```
 
-The output contains record and key fingerprints, with no full keys or raw device identifiers.
+The output contains record and key fingerprints, with no full keys or raw device identifiers. The [synthetic fixtures](fixtures/README.md) use explicitly invented `FAKE` values, never captured device keys.
 
 ### Extract from your vendor app
 
@@ -65,6 +65,7 @@ Tests do not use ADB, root, accounts, cloud APIs or real devices.
 - [Compatibility and limits](docs/compatibility.md) — supported scenarios, two-app result and parser constraints.
 - [Troubleshooting](docs/troubleshooting.md) — root access, missing matches and incomplete records.
 - [Handling captures and keys](docs/security.md) — private files and safe issue reports.
+- [Credits and provenance](CREDITS.md) — scanner origin, copyright and source-history limits.
 
 ## Related Project
 
