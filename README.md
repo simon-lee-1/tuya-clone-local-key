@@ -65,7 +65,7 @@ Tests do not use ADB, root, accounts, cloud APIs or real devices.
 - [Compatibility and limits](docs/compatibility.md) — supported scenarios, two-app result and parser constraints.
 - [Troubleshooting](docs/troubleshooting.md) — root access, missing matches and incomplete records.
 - [Handling captures and keys](docs/security.md) — private files and safe issue reports.
-- [Credits and provenance](CREDITS.md) — scanner origin, copyright and source-history limits.
+- [Credits](CREDITS.md) — public project acknowledgment.
 
 ## Related Project
 

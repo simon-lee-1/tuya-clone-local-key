@@ -1,11 +1,4 @@
-/*
- * SPDX-License-Identifier: MIT
- * Copyright (c) 2026 Simon Lee
- *
- * From the maintainer's Tuya extraction research, introduced 9 September 2026,
- * following the earlier memdump4.c prototype. See ../CREDITS.md for provenance
- * and the limits of the available source history.
- */
+/* SPDX-License-Identifier: MIT */
 #define _XOPEN_SOURCE 700
 #include <ctype.h>
 #include <errno.h>
