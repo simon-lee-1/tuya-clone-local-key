@@ -1,0 +1,1 @@
+noise-{"devId": "synthetic-device-alpha", "localKey": "Ab3!xY7?mN2#qR8~", "name": "Owned test plug"}-middle-{"devId": "synthetic-device-alpha", "localKey": "Ab3!xY7?mN2#qR8~", "name": "duplicate"}-x-{"devId": "synthetic-device-beta", "localKey": "Z9$kL4_wP6@tC1%v", "name": "Escaped \\\"name\\\""}-bad-{"devId": "bad", "localKey": "too-short"}-{"localKey":"unterminated"

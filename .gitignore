@@ -1,0 +1,14 @@
+/captures/
+/build/
+/target/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.apk
+*.img
+*.bin
+*.dump
+*.pem
+*.key
+local-keys*.json
